@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darkgray;
+    background-image: url('https://source.unsplash.com/random/1920x1080/?nature,winter');
+}
+
+.window {
+    background-color:rgb(243, 161, 53);
+    padding: 2em;
+    border-radius: 20px;
+    width: 50%;
+    margin: 1em;
+    height: fit-content;
+}
+
+.search{
+    align-items:flex-start;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 18px;
+}
+button:hover{
+    background-color: palegreen;
+}
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 1em;
+    border-radius: 18px;
+    padding: 0.5em 1em;
+    width: 60%;
+    min-width: 100px;
+}
+.weather{
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+.flex{
+    display: flex;
+}
+.description{
+    margin-left: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content:"Loading weather";
+    color:aliceblue;
+    position: absolute;
+    top: 0;
+}
+
